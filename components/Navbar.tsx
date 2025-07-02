@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import clsx from 'clsx'
+import { useRouter, usePathname } from 'next/navigation'
 
 const navigation = [
   { name: 'Use Cases', href: '#usecases' },
@@ -14,9 +15,32 @@ const navigation = [
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const router = useRouter()
+  const pathname = usePathname()
+
+  // Custom handler for anchor links
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    if (!href.startsWith('#')) return // not an anchor link
+    e.preventDefault()
+    const section = href.replace('#', '')
+    if (pathname !== '/') {
+      router.push('/' + href)
+      setMobileMenuOpen(false)
+    } else {
+      const el = document.getElementById(section)
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' })
+        setMobileMenuOpen(false)
+      } else {
+        // fallback: update hash
+        window.location.hash = href
+        setMobileMenuOpen(false)
+      }
+    }
+  }
 
   return (
-    <header className="absolute inset-x-0 top-0 z-50">
+    <header className="sticky top-0 z-50 bg-black/40 backdrop-blur-md transition-all duration-300">
       <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
@@ -43,8 +67,9 @@ export default function Navbar() {
           {navigation.map((item) => (
             <Link
               key={item.name}
-              href={item.href}
+              href={item.href.startsWith('#') ? '/' + item.href : item.href}
               className="text-sm font-semibold leading-6 text-gray-300 hover:text-white transition-colors"
+              onClick={item.href.startsWith('#') ? (e) => handleNavClick(e, item.href) : undefined}
             >
               {item.name}
             </Link>
@@ -54,6 +79,7 @@ export default function Navbar() {
           <Link
             href="#cta"
             className="button-gradient text-white px-6 py-2 rounded-full text-sm font-semibold leading-6 shadow-lg"
+            onClick={(e) => handleNavClick(e, '#cta')}
           >
             Book Discovery Call
           </Link>
@@ -91,9 +117,9 @@ export default function Navbar() {
                 {navigation.map((item) => (
                   <Link
                     key={item.name}
-                    href={item.href}
+                    href={item.href.startsWith('#') ? '/' + item.href : item.href}
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-300 hover:bg-gray-50/10"
-                    onClick={() => setMobileMenuOpen(false)}
+                    onClick={item.href.startsWith('#') ? (e) => handleNavClick(e, item.href) : undefined}
                   >
                     {item.name}
                   </Link>
@@ -103,7 +129,7 @@ export default function Navbar() {
                 <Link
                   href="#cta"
                   className="button-gradient -mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white text-center"
-                  onClick={() => setMobileMenuOpen(false)}
+                  onClick={(e) => handleNavClick(e, '#cta')}
                 >
                   Book Discovery Call
                 </Link>
