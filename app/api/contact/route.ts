@@ -25,7 +25,7 @@ export async function POST(request: NextRequest) {
 
     // Configure nodemailer (only if SMTP credentials are provided)
     if (process.env.SMTP_HOST && process.env.SMTP_USER && process.env.SMTP_PASS) {
-      const transporter = nodemailer.createTransporter({
+      const transporter = nodemailer.createTransport({
         host: process.env.SMTP_HOST,
         port: 587,
         secure: false,

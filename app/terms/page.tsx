@@ -33,8 +33,8 @@ export default function TermsPage() {
             <section>
               <h2 className="text-2xl font-bold text-white mb-4">1. Acceptance of Terms</h2>
               <p className="text-gray-300">
-                By accessing and using Irsa's services, you accept and agree to be bound by the 
-                terms and provision of this agreement.
+              By accessing and using Irsa&apos;s services, you accept and agree to be bound by the 
+              terms and provision of this agreement.
               </p>
             </section>
 

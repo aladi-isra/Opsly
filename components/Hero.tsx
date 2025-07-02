@@ -103,7 +103,7 @@ export default function Hero() {
               {submitted ? (
                 <div className="text-center">
                   <CheckIcon className="h-12 w-12 text-green-400 mx-auto mb-4" />
-                  <p className="text-white mb-4">Thank you! We'll be in touch soon.</p>
+                  <p className="text-white mb-4">Thank you! We&apos;ll be in touch soon.</p>
                   <button
                     onClick={handlePhoneCall}
                     className="w-full button-gradient text-white px-6 py-4 rounded-xl font-semibold text-lg flex items-center justify-center space-x-2"

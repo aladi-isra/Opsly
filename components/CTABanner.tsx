@@ -13,7 +13,7 @@ export default function CTABanner() {
             </h2>
             <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-purple-100">
               Join thousands of businesses that have transformed their customer experience 
-              with Irsa's AI-powered automation. Get started in minutes.
+              with Irsa&apos;s AI-powered automation. Get started in minutes.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Link
