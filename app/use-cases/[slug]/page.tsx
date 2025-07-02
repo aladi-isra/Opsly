@@ -11,19 +11,189 @@ const industryEmojis = {
 
 const useCaseLayouts = {
   'law-firms': {
-    emoji: '⚖️',
+    emoji: '🔍',
+    headline: 'Streamline Legal Operations',
+    intro: 'Irsa enables law firms to handle intake, scheduling, and follow-ups without lifting a finger.',
+    features: [
+      {
+        title: 'Smart Client Intake',
+        bullets: [
+          '24/7 lead capture',
+          'Form parsing',
+          'Calendar sync',
+        ],
+      },
+      {
+        title: 'Document Workflow',
+        bullets: [
+          'Draft/send agreements',
+          'Auto reminders',
+          'E-signature follow-up',
+        ],
+      },
+      {
+        title: 'Communication',
+        bullets: [
+          'Routine query replies',
+          'Appointment reminders',
+          'Case updates',
+        ],
+      },
+    ],
+    perfectFor: [
+      'Solo practitioners',
+      'Small/mid law firms',
+      'Intake teams',
+    ],
+    outro: 'Let your legal team focus on clients, not admin work.'
   },
   'real-estate': {
     emoji: '🏠',
+    headline: 'Never Miss a Lead Again',
+    intro: 'Irsa helps real estate pros capture, qualify, and convert leads 24/7 with intelligent inquiry management.',
+    features: [
+      {
+        title: 'Lead Qualification',
+        bullets: [
+          'Instant inquiry response',
+          'Budget & Timeline scan',
+          'Auto lead scoring',
+        ],
+      },
+      {
+        title: 'Property Management',
+        bullets: [
+          'Showings scheduling',
+          'Info requests',
+          'Virtual tour setup',
+        ],
+      },
+      {
+        title: 'Client Communication',
+        bullets: [
+          'Market updates',
+          'Doc requests',
+          'Status notifications',
+        ],
+      },
+    ],
+    perfectFor: [
+      'Agents & teams',
+      'Property managers',
+      'New construction sales',
+    ],
+    outro: 'Close more deals with Irsa\'s intelligent lead management.'
   },
   'financial-advisors': {
     emoji: '💰',
+    headline: 'Make Every Client Feel VIP',
+    intro: 'Irsa helps advisors stay on top of client relationships and routine tasks, freeing them to focus on strategy.',
+    features: [
+      {
+        title: 'Smart Scheduling',
+        bullets: [
+          'Personalized scheduling',
+          'Annual review follow-up',
+          'Prospect nurturing',
+        ],
+      },
+      {
+        title: 'Client Communication',
+        bullets: [
+          'Investment summaries',
+          'Tax reminders',
+          'Secure file prompts',
+        ],
+      },
+      {
+        title: 'Intelligence Tools',
+        bullets: [
+          'Meeting summaries',
+          'Client analytics',
+          'CRM integration',
+        ],
+      },
+    ],
+    perfectFor: [
+      'Independent advisors',
+      'Wealth managers',
+      'Multi-office firms',
+    ],
+    outro: 'Deliver white-glove service at scale with Irsa.'
   },
   'medical-clinics': {
     emoji: '❤️',
+    headline: 'Healthier Clinics, Less Admin',
+    intro: 'Irsa automates essential patient workflows, reducing wait times and no-shows.',
+    features: [
+      {
+        title: 'Intake Automation',
+        bullets: [
+          'Insurance collection',
+          'Screening & booking',
+          'Pre-visit reminders',
+        ],
+      },
+      {
+        title: 'Post-Care Follow-Up',
+        bullets: [
+          'Treatment reminders',
+          'Rx pickup notifications',
+          'Satisfaction surveys',
+        ],
+      },
+      {
+        title: '24/7 Support',
+        bullets: [
+          'Answer FAQs',
+          'Urgent case redirect',
+          'Test result updates',
+        ],
+      },
+    ],
+    perfectFor: [
+      'Family practices',
+      'Specialists',
+      'Multi-location clinics',
+    ],
+    outro: 'Improve care without adding overhead.'
   },
   'marketing-agencies': {
     emoji: '📈',
+    headline: 'Scale Your Agency with AI',
+    intro: 'Irsa automates client onboarding, content calendars, and reporting so your team can focus on creative work.',
+    features: [
+      {
+        title: 'Onboarding Automation',
+        bullets: [
+          'Client intake forms',
+          'Kickoff scheduling',
+          'Welcome sequences',
+        ],
+      },
+      {
+        title: 'Content Calendar',
+        bullets: [
+          'Automated reminders',
+          'Approval workflows',
+          'Deadline tracking',
+        ],
+      },
+      {
+        title: 'Reporting',
+        bullets: [
+          'Monthly summaries',
+          'KPI dashboards',
+          'Client portal access',
+        ],
+      },
+    ],
+    perfectFor: [
+      'Boutique agencies',
+      'Content teams',
+      'Freelance marketers',
+    ],
+    outro: 'Grow your agency without growing your admin workload.'
   },
 }
 
