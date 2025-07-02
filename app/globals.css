@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 12, 12, 15;
+  --background-end-rgb: 42, 43, 50;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      rgb(var(--background-start-rgb)),
+      rgb(var(--background-end-rgb))
+    );
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #7950F2, #A855F7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #0C0C0F 0%, #2A2B32 100%);
+}
+
+.button-gradient {
+  background: linear-gradient(135deg, #7950F2, #A855F7);
+  transition: all 0.3s ease;
+}
+
+.button-gradient:hover {
+  background: linear-gradient(135deg, #6B46C1, #9333EA);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(121, 80, 242, 0.3);
+} 
