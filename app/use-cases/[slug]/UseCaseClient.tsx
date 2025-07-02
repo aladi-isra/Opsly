@@ -185,10 +185,9 @@ const useCaseLayouts = {
   },
 }
 
-export default function UseCaseClient({ useCase, slug }: { useCase: any, slug: string }) {
+export default function UseCaseClient({ useCase, layout, slug }: { useCase: any, layout: any, slug: string }) {
   const [openFAQ, setOpenFAQ] = useState<number | null>(null)
   const Icon = industryIcons[slug as keyof typeof industryIcons]
-  const layout = useCaseLayouts[slug as keyof typeof useCaseLayouts]
 
   return (
     <div className="min-h-screen pt-24 pb-16 bg-black/95">
@@ -237,11 +236,11 @@ export default function UseCaseClient({ useCase, slug }: { useCase: any, slug: s
           <div>
             <h3 className="text-xl font-semibold text-white mb-4">🚀 Key Features</h3>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-              {layout.features.map((feature, idx) => (
+              {layout.features.map((feature: any, idx: number) => (
                 <div key={idx}>
                   <h4 className="text-purple-400 font-semibold text-lg mb-2">{feature.title}</h4>
                   <ul className="text-gray-300 space-y-1 list-disc list-inside">
-                    {feature.bullets.map((b, i) => <li key={i}>{b}</li>)}
+                    {feature.bullets.map((b: string, i: number) => <li key={i}>{b}</li>)}
                   </ul>
                 </div>
               ))}
@@ -252,7 +251,7 @@ export default function UseCaseClient({ useCase, slug }: { useCase: any, slug: s
           <div className="flex flex-col items-center">
             <h3 className="text-xl font-semibold text-white mb-4">🎯 Perfect For</h3>
             <ul className="text-gray-300 list-disc space-y-1 min-w-fit">
-              {layout.perfectFor.map((p, i) => <li key={i}>{p}</li>)}
+              {layout.perfectFor.map((p: string, i: number) => <li key={i}>{p}</li>)}
             </ul>
           </div>
 
@@ -310,7 +309,7 @@ export default function UseCaseClient({ useCase, slug }: { useCase: any, slug: s
         <div className="mt-14 max-w-2xl mx-auto">
           <h4 className="text-xl font-bold text-white mb-4 text-center">FAQs</h4>
           <div className="space-y-3">
-            {faqs.map((faq, i) => (
+            {faqs.map((faq: any, i: number) => (
               <div key={i}>
                 <button
                   className="w-full text-left bg-white/5 rounded-lg px-4 py-3 text-white font-semibold focus:outline-none focus:ring-2 focus:ring-primary"

@@ -9,6 +9,24 @@ const industryEmojis = {
   'marketing-agencies': '📈',
 }
 
+const useCaseLayouts = {
+  'law-firms': {
+    emoji: '⚖️',
+  },
+  'real-estate': {
+    emoji: '🏠',
+  },
+  'financial-advisors': {
+    emoji: '💰',
+  },
+  'medical-clinics': {
+    emoji: '❤️',
+  },
+  'marketing-agencies': {
+    emoji: '📈',
+  },
+}
+
 const testimonials = {
   'law-firms': '"Irsa saved us 12 hours/week — Managing Partner, Vantage Legal"',
   'real-estate': '"Irsa helped us close 35% more leads! — Top Agent, Urban Realty"',
@@ -62,10 +80,11 @@ interface Params {
 
 export default function UseCasePage({ params }: { params: Params }) {
   const useCase = useCases[params.slug as keyof typeof useCases]
-  if (!useCase) {
+  const layout = useCaseLayouts[params.slug as keyof typeof useCaseLayouts]
+  if (!useCase || !layout) {
     notFound()
   }
-  return <UseCaseClient useCase={useCase} slug={params.slug} />
+  return <UseCaseClient useCase={useCase} layout={layout} slug={params.slug} />
 }
 
 export async function generateStaticParams() {
