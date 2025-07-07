@@ -43,9 +43,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className="font-inter antialiased bg-brandDark text-white">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+      </head>
+      <body className="font-inter antialiased bg-background text-textLight w-full">
         <Navbar />
-        <main>
+        <main className="w-full">
           {children}
         </main>
         <Footer />

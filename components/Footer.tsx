@@ -53,7 +53,7 @@ const navigation = {
 
 export default function Footer() {
   return (
-    <footer className="bg-brandDark" aria-labelledby="footer-heading">
+    <footer className="bg-surface" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
@@ -62,18 +62,18 @@ export default function Footer() {
           <div className="space-y-8">
             {/* Logo */}
             <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-gradient-to-r from-primary to-purple-400 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-lg">O</span>
+              <div className="w-10 h-10 bg-gradient-to-r from-primary to-accent rounded-full flex items-center justify-center">
+                <span className="text-textLight font-bold text-lg">O</span>
               </div>
-              <span className="text-white font-bold text-2xl">Opsly</span>
+              <span className="text-textLight font-bold text-2xl">Opsly</span>
             </div>
-            <p className="text-sm leading-6 text-gray-300">
+            <p className="text-sm leading-6 text-textMuted">
               AI-powered business automation that feels genuinely human. 
               Boost productivity with 24/7 reception, bookings, and customer support.
             </p>
             <div className="flex space-x-6">
               {navigation.social.map((item) => (
-                <Link key={item.name} href={item.href} className="text-gray-400 hover:text-gray-300 transition-colors">
+                <Link key={item.name} href={item.href} className="text-textMuted hover:text-textLight transition-colors">
                   <span className="sr-only">{item.name}</span>
                   <item.icon className="h-6 w-6" aria-hidden="true" />
                 </Link>
@@ -83,11 +83,11 @@ export default function Footer() {
           <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-sm font-semibold leading-6 text-white">Quick Links</h3>
+                <h3 className="text-sm font-semibold leading-6 text-textLight">Quick Links</h3>
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.quickLinks.map((item) => (
                     <li key={item.name}>
-                      <Link href={item.href} className="text-sm leading-6 text-gray-300 hover:text-white transition-colors">
+                      <Link href={item.href} className="text-sm leading-6 text-textMuted hover:text-textLight transition-colors">
                         {item.name}
                       </Link>
                     </li>
@@ -95,11 +95,11 @@ export default function Footer() {
                 </ul>
               </div>
               <div className="mt-10 md:mt-0">
-                <h3 className="text-sm font-semibold leading-6 text-white">Legal</h3>
+                <h3 className="text-sm font-semibold leading-6 text-textLight">Legal</h3>
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.legal.map((item) => (
                     <li key={item.name}>
-                      <Link href={item.href} className="text-sm leading-6 text-gray-300 hover:text-white transition-colors">
+                      <Link href={item.href} className="text-sm leading-6 text-textMuted hover:text-textLight transition-colors">
                         {item.name}
                       </Link>
                     </li>
@@ -109,19 +109,19 @@ export default function Footer() {
             </div>
             <div className="md:grid md:grid-cols-1 md:gap-8">
               <div>
-                <h3 className="text-sm font-semibold leading-6 text-white">Contact</h3>
+                <h3 className="text-sm font-semibold leading-6 text-textLight">Contact</h3>
                 <ul role="list" className="mt-6 space-y-4">
                   <li>
-                    <a href="mailto:hello@opsly.ca" className="text-sm leading-6 text-gray-300 hover:text-white transition-colors">
+                    <a href="mailto:hello@opsly.ca" className="text-sm leading-6 text-textMuted hover:text-textLight transition-colors">
                       hello@opsly.ca
                     </a>
                   </li>
                   <li>
-                    <a href="tel:+18555551234" className="text-sm leading-6 text-gray-300 hover:text-white transition-colors">
+                    <a href="tel:+18555551234" className="text-sm leading-6 text-textMuted hover:text-textLight transition-colors">
                       +1 (855) 555-1234
                     </a>
                   </li>
-                  <li className="text-sm leading-6 text-gray-300">
+                  <li className="text-sm leading-6 text-textMuted">
                     Available 24/7
                   </li>
                 </ul>
@@ -129,8 +129,8 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-16 border-t border-gray-900/10 pt-8 sm:mt-20 lg:mt-24">
-          <p className="text-xs leading-5 text-gray-400 text-center">
+        <div className="mt-16 border-t border-textLight/10 pt-8 sm:mt-20 lg:mt-24">
+          <p className="text-xs leading-5 text-textMuted text-center">
             &copy; {new Date().getFullYear()} Opsly Inc. All rights reserved.
           </p>
         </div>

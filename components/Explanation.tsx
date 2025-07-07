@@ -34,36 +34,36 @@ const steps = [
 
 export default function Explanation() {
   return (
-    <div className="py-24 sm:py-32 bg-brandLight/50">
+    <div className="py-24 sm:py-32 bg-surface/30">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tight text-textLight sm:text-4xl">
             How Opsly Works
           </h2>
-          <p className="mt-6 text-lg leading-8 text-gray-300">
+          <p className="mt-6 text-lg leading-8 text-textMuted">
             Our AI agents integrate seamlessly with your business, providing intelligent automation 
             that enhances rather than replaces your human team.
           </p>
         </div>
 
         <div className="mx-auto mt-16 max-w-7xl">
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16 items-center">
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16 items-start">
             {/* Illustration placeholder */}
             <div className="relative lg:order-2">
-              <div className="aspect-square bg-gradient-to-br from-primary/20 to-purple-400/20 rounded-3xl border border-white/10 flex items-center justify-center">
+              <div className="bg-gradient-to-br from-primary/10 to-accent/10 rounded-3xl border border-textLight/10 flex items-center justify-center p-12">
                 <div className="text-center">
-                  <div className="w-32 h-32 bg-gradient-to-r from-primary to-purple-400 rounded-full mx-auto mb-6 flex items-center justify-center">
-                    <span className="text-white text-4xl font-bold">AI</span>
+                  <div className="w-32 h-32 bg-gradient-to-r from-primary to-accent rounded-full mx-auto mb-6 flex items-center justify-center">
+                    <span className="text-textLight text-4xl font-bold">AI</span>
                   </div>
-                  <p className="text-gray-300 text-lg">
+                  <p className="text-textMuted text-lg">
                     Interactive Demo<br />Coming Soon
                   </p>
                 </div>
               </div>
               
               {/* Floating elements */}
-              <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary/30 rounded-full blur-xl"></div>
-              <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-purple-400/20 rounded-full blur-2xl"></div>
+              <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary/20 rounded-full blur-xl"></div>
+              <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-accent/15 rounded-full blur-2xl"></div>
             </div>
 
             {/* Steps */}
@@ -71,16 +71,16 @@ export default function Explanation() {
               {steps.map((step) => (
                 <div key={step.number} className="flex items-start space-x-4">
                   <div className="flex-shrink-0">
-                    <div className="w-12 h-12 bg-gradient-to-r from-primary to-purple-400 rounded-xl flex items-center justify-center">
-                      <step.icon className="w-6 h-6 text-white" />
+                    <div className="w-12 h-12 bg-gradient-to-r from-primary to-accent rounded-xl flex items-center justify-center">
+                      <step.icon className="w-6 h-6 text-textLight" />
                     </div>
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center space-x-3 mb-2">
                       <span className="text-sm font-mono text-primary font-bold">{step.number}</span>
-                      <h3 className="text-xl font-semibold text-white">{step.title}</h3>
+                      <h3 className="text-xl font-semibold text-textLight">{step.title}</h3>
                     </div>
-                    <p className="text-gray-300 leading-relaxed">{step.description}</p>
+                    <p className="text-textMuted leading-relaxed">{step.description}</p>
                   </div>
                 </div>
               ))}

@@ -48,10 +48,10 @@ export default function UseCases() {
     <div id="usecases" className="py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tight text-textLight sm:text-4xl">
             Perfect for Every Industry
           </h2>
-          <p className="mt-6 text-lg leading-8 text-gray-300">
+          <p className="mt-6 text-lg leading-8 text-textMuted">
             Opsly adapts to your business needs, providing specialized automation 
             for different industries and use cases.
           </p>
@@ -62,21 +62,21 @@ export default function UseCases() {
             {useCases.map((useCase) => (
               <div
                 key={useCase.id}
-                className="relative group bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:border-primary/50 transition-all duration-300 hover:transform hover:scale-105 flex flex-col h-full"
+                className="relative group bg-surface/30 backdrop-blur-sm rounded-2xl p-8 border border-textLight/10 hover:border-primary/50 transition-all duration-300 hover:transform hover:scale-105 flex flex-col h-full"
               >
                 {/* Icon */}
-                <div className="w-16 h-16 bg-gradient-to-r from-primary to-purple-400 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                  <useCase.icon className="w-8 h-8 text-white" />
+                <div className="w-16 h-16 bg-gradient-to-r from-primary to-accent rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <useCase.icon className="w-8 h-8 text-textLight" />
                 </div>
 
                 {/* Content */}
-                <h3 className="text-xl font-semibold text-white mb-2">
+                <h3 className="text-xl font-semibold text-textLight mb-2">
                   {useCase.title}
                 </h3>
-                <p className="text-base text-gray-200 mb-3 leading-relaxed font-medium">
+                <p className="text-base text-textLight/80 mb-3 leading-relaxed font-medium">
                   {useCase.description}
                 </p>
-                <p className="text-gray-400 text-sm mb-6 flex-grow">
+                <p className="text-textMuted text-sm mb-6 flex-grow">
                   {useCase.details}
                 </p>
 
@@ -84,7 +84,7 @@ export default function UseCases() {
                 <div className="pt-2">
                   <Link
                     href={useCase.href}
-                    className="inline-flex items-center text-primary hover:text-purple-400 font-semibold text-sm transition-colors group-hover:underline"
+                    className="inline-flex items-center text-primary hover:text-accent font-semibold text-sm transition-colors group-hover:underline"
                   >
                     Learn More
                     <svg className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -94,7 +94,7 @@ export default function UseCases() {
                 </div>
 
                 {/* Hover effect */}
-                <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-purple-400/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity -z-10"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-accent/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity -z-10"></div>
               </div>
             ))}
           </div>

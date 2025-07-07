@@ -49,14 +49,14 @@ export default function Hero() {
   }
 
   return (
-    <div className="relative isolate px-6 pt-14 lg:px-8 min-h-screen flex items-center">
+    <div className="relative isolate px-6 pt-14 lg:px-8 py-24 sm:py-32">
       {/* Background gradient */}
       <div
         className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
         aria-hidden="true"
       >
         <div
-          className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-primary to-purple-400 opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+          className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-primary to-accent opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
           style={{
             clipPath:
               'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
@@ -64,18 +64,18 @@ export default function Hero() {
         />
       </div>
 
-      <div className="mx-auto max-w-7xl py-32 sm:py-48 lg:py-56">
+      <div className="mx-auto max-w-7xl">
         <div className="lg:grid lg:grid-cols-12 lg:gap-8">
           {/* Left content */}
           <div className="lg:col-span-7">
             <div className="text-center lg:text-left">
-              <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl lg:text-7xl">
+              <h1 className="text-4xl font-bold tracking-tight text-textLight sm:text-6xl lg:text-7xl">
                 Boost Your Business{' '}
-                <span className="block text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-400">
+                <span className="block text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent leading-tight pb-2">
                   Human-Friendly AI Agents
                 </span>
               </h1>
-              <p className="mt-6 text-lg leading-8 text-gray-300 max-w-2xl lg:max-w-none">
+              <p className="mt-6 text-lg leading-8 text-textMuted max-w-2xl lg:max-w-none">
                 Transform your business with AI agents that work alongside your team. 
                 Get 24/7 customer support, automated bookings, and intelligent sales assistance 
                 that feels genuinely human.
@@ -86,7 +86,7 @@ export default function Hero() {
                 {benefits.map((benefit, index) => (
                   <div key={index} className="flex items-center justify-center lg:justify-start">
                     <CheckIcon className="h-6 w-6 text-primary mr-3 flex-shrink-0" />
-                    <span className="text-lg text-gray-200">{benefit}</span>
+                    <span className="text-lg text-textMuted">{benefit}</span>
                   </div>
                 ))}
               </div>
@@ -95,18 +95,18 @@ export default function Hero() {
 
           {/* Right content - Demo call card */}
           <div className="mt-16 lg:mt-0 lg:col-span-5">
-            <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 shadow-2xl border border-white/20">
-              <h3 className="text-2xl font-bold text-white mb-6 text-center">
+            <div className="bg-surface/50 backdrop-blur-lg rounded-2xl p-8 shadow-2xl border border-textLight/20">
+              <h3 className="text-2xl font-bold text-textLight mb-6 text-center">
                 Try a Live Phone Demo
               </h3>
               
               {submitted ? (
                 <div className="text-center">
                   <CheckIcon className="h-12 w-12 text-green-400 mx-auto mb-4" />
-                  <p className="text-white mb-4">Thank you! We&apos;ll be in touch soon.</p>
+                  <p className="text-textLight mb-4">Thank you! We&apos;ll be in touch soon.</p>
                   <button
                     onClick={handlePhoneCall}
-                    className="w-full button-gradient text-white px-6 py-4 rounded-xl font-semibold text-lg flex items-center justify-center space-x-2"
+                    className="w-full button-gradient text-textLight px-6 py-4 rounded-xl font-semibold text-lg flex items-center justify-center space-x-2"
                   >
                     <PhoneIcon className="h-5 w-5" />
                     <span>Call Now: +1-855-555-1234</span>
@@ -121,7 +121,7 @@ export default function Hero() {
                       value={formData.name}
                       onChange={(e) => setFormData(prev => ({ ...prev, name: e.target.value }))}
                       required
-                      className="w-full px-4 py-3 rounded-xl bg-white/20 border border-white/30 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                      className="w-full px-4 py-3 rounded-xl bg-surface/50 border border-textLight/20 text-textLight placeholder-textMuted focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
                     />
                   </div>
                   <div>
@@ -131,7 +131,7 @@ export default function Hero() {
                       value={formData.email}
                       onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
                       required
-                      className="w-full px-4 py-3 rounded-xl bg-white/20 border border-white/30 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                      className="w-full px-4 py-3 rounded-xl bg-surface/50 border border-textLight/20 text-textLight placeholder-textMuted focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
                     />
                   </div>
                   <div>
@@ -141,20 +141,20 @@ export default function Hero() {
                       value={formData.phone}
                       onChange={(e) => setFormData(prev => ({ ...prev, phone: e.target.value }))}
                       required
-                      className="w-full px-4 py-3 rounded-xl bg-white/20 border border-white/30 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                      className="w-full px-4 py-3 rounded-xl bg-surface/50 border border-textLight/20 text-textLight placeholder-textMuted focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
                     />
                   </div>
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full button-gradient text-white px-6 py-4 rounded-xl font-semibold text-lg disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full button-gradient text-textLight px-6 py-4 rounded-xl font-semibold text-lg disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     {isSubmitting ? 'Submitting...' : 'Get Live Demo'}
                   </button>
                   <button
                     type="button"
                     onClick={handlePhoneCall}
-                    className="w-full bg-white/20 hover:bg-white/30 text-white px-6 py-3 rounded-xl font-semibold border border-white/30 flex items-center justify-center space-x-2 transition-colors"
+                    className="w-full bg-surface/50 hover:bg-surface/70 text-textLight px-6 py-3 rounded-xl font-semibold border border-textLight/20 flex items-center justify-center space-x-2 transition-colors"
                   >
                     <PhoneIcon className="h-5 w-5" />
                     <span>Or Call: +1-855-555-1234</span>
@@ -172,7 +172,7 @@ export default function Hero() {
         aria-hidden="true"
       >
         <div
-          className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-primary to-purple-400 opacity-20 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+          className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-primary to-accent opacity-15 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
           style={{
             clipPath:
               'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
