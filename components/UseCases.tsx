@@ -13,7 +13,7 @@ const useCases = [
     id: 'law-firms',
     title: 'Law Firms',
     description: 'Grow your practice by automating client intake, scheduling, and document workflows—so you can focus on winning cases, not paperwork.',
-    details: 'Let Irsa handle repetitive admin tasks, boost client satisfaction, and free up your legal team for high-value work.',
+    details: 'Let Opsly handle repetitive admin tasks, boost client satisfaction, and free up your legal team for high-value work.',
     icon: BriefcaseIcon,
     href: '/use-cases/law-firms'
   },
@@ -21,7 +21,7 @@ const useCases = [
     id: 'real-estate',
     title: 'Real Estate',
     description: 'Capture, qualify, and convert more leads 24/7 with instant responses and seamless property inquiry management.',
-    details: 'Never miss a sales opportunity—Irsa nurtures prospects, schedules showings, and keeps your pipeline full.',
+    details: 'Never miss a sales opportunity—Opsly nurtures prospects, schedules showings, and keeps your pipeline full.',
     icon: HomeIcon,
     href: '/use-cases/real-estate'
   },
@@ -29,7 +29,7 @@ const useCases = [
     id: 'financial-advisors',
     title: 'Financial Advisors',
     description: 'Deliver a VIP client experience with automated appointment booking, proactive follow-ups, and easy report sharing.',
-    details: 'Irsa keeps your clients engaged and informed, so you can focus on building wealth and relationships.',
+    details: 'Opsly keeps your clients engaged and informed, so you can focus on building wealth and relationships.',
     icon: BanknotesIcon,
     href: '/use-cases/financial-advisors'
   },
@@ -37,7 +37,7 @@ const useCases = [
     id: 'medical-clinics',
     title: 'Medical Clinics',
     description: 'Reduce no-shows and streamline patient care with automated intake, reminders, and follow-up messaging.',
-    details: 'Irsa improves patient satisfaction and clinic efficiency, letting your staff focus on care, not calls.',
+    details: 'Opsly improves patient satisfaction and clinic efficiency, letting your staff focus on care, not calls.',
     icon: HeartIcon,
     href: '/use-cases/medical-clinics'
   }
@@ -52,7 +52,7 @@ export default function UseCases() {
             Perfect for Every Industry
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-300">
-            Irsa adapts to your business needs, providing specialized automation 
+            Opsly adapts to your business needs, providing specialized automation 
             for different industries and use cases.
           </p>
         </div>

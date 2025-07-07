@@ -1,8 +1,8 @@
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Privacy Policy - Irsa',
-  description: 'Irsa\'s privacy policy and data protection practices',
+  title: 'Privacy Policy - Opsly',
+  description: 'Opsly\'s privacy policy and data protection practices',
 }
 
 export default function PrivacyPage() {
@@ -78,7 +78,7 @@ export default function PrivacyPage() {
               <h2 className="text-2xl font-bold text-white mb-4">5. Your Rights</h2>
               <p className="text-gray-300 mb-4">
                 You have the right to access, update, or delete your personal information. 
-                Contact us at privacy@irsa.ca to exercise these rights.
+                Contact us at privacy@opsly.ca to exercise these rights.
               </p>
             </section>
 
@@ -88,7 +88,7 @@ export default function PrivacyPage() {
                 If you have any questions about this Privacy Policy, please contact us at:
               </p>
               <div className="mt-4 space-y-2">
-                <p className="text-gray-300">Email: privacy@irsa.ca</p>
+                <p className="text-gray-300">Email: privacy@opsly.ca</p>
                 <p className="text-gray-300">Phone: +1 (855) 555-1234</p>
               </div>
             </section>

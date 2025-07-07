@@ -35,10 +35,10 @@ export async function POST(request: NextRequest) {
         },
       })
 
-      // Send email to Irsa team
+      // Send email to Opsly team
       await transporter.sendMail({
         from: process.env.SMTP_USER,
-        to: 'hello@irsa.ca',
+                  to: 'hello@opsly.ca',
         subject: `New Contact Form Submission from ${name}`,
         html: `
           <h2>New Contact Form Submission</h2>
@@ -54,13 +54,13 @@ export async function POST(request: NextRequest) {
       await transporter.sendMail({
         from: process.env.SMTP_USER,
         to: email,
-        subject: 'Thank you for contacting Irsa',
+                  subject: 'Thank you for contacting Opsly',
         html: `
           <h2>Thank you for reaching out!</h2>
           <p>Hi ${name},</p>
           <p>We've received your message and will get back to you within 24 hours.</p>
           <p>In the meantime, feel free to explore our platform or book a live demo call.</p>
-          <p>Best regards,<br>The Irsa Team</p>
+                      <p>Best regards,<br>The Opsly Team</p>
         `,
       })
     } else {

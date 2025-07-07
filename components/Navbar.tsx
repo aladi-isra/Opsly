@@ -44,12 +44,12 @@ export default function Navbar() {
       <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
-            <span className="sr-only">Irsa</span>
+            <span className="sr-only">Opsly</span>
             <div className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-gradient-to-r from-primary to-purple-400 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-sm">I</span>
+                <span className="text-white font-bold text-sm">O</span>
               </div>
-              <span className="text-white font-bold text-xl">Irsa</span>
+              <span className="text-white font-bold text-xl">Opsly</span>
             </div>
           </Link>
         </div>
@@ -94,12 +94,12 @@ export default function Navbar() {
         <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-brandDark px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <Link href="/" className="-m-1.5 p-1.5">
-              <span className="sr-only">Irsa</span>
+              <span className="sr-only">Opsly</span>
               <div className="flex items-center space-x-2">
                 <div className="w-8 h-8 bg-gradient-to-r from-primary to-purple-400 rounded-full flex items-center justify-center">
-                  <span className="text-white font-bold text-sm">I</span>
+                  <span className="text-white font-bold text-sm">O</span>
                 </div>
-                <span className="text-white font-bold text-xl">Irsa</span>
+                <span className="text-white font-bold text-xl">Opsly</span>
               </div>
             </Link>
             <button

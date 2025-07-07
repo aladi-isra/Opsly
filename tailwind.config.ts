@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: '#7950F2',   // Irsa purple accent
+        primary: '#7950F2',   // Opsly purple accent
         brandDark: '#0C0C0F', // almost black background
         brandLight: '#2A2B32'
       },

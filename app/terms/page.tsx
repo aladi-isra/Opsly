@@ -1,8 +1,8 @@
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Terms of Service - Irsa',
-  description: 'Irsa\'s terms of service and usage agreement',
+  title: 'Terms of Service - Opsly',
+  description: 'Opsly\'s terms of service and usage agreement',
 }
 
 export default function TermsPage() {
@@ -33,7 +33,7 @@ export default function TermsPage() {
             <section>
               <h2 className="text-2xl font-bold text-white mb-4">1. Acceptance of Terms</h2>
               <p className="text-gray-300">
-              By accessing and using Irsa&apos;s services, you accept and agree to be bound by the 
+              By accessing and using Opsly&apos;s services, you accept and agree to be bound by the 
               terms and provision of this agreement.
               </p>
             </section>
@@ -41,7 +41,7 @@ export default function TermsPage() {
             <section>
               <h2 className="text-2xl font-bold text-white mb-4">2. Service Description</h2>
               <p className="text-gray-300 mb-4">
-                Irsa provides AI-powered business automation services including:
+                Opsly provides AI-powered business automation services including:
               </p>
               <ul className="list-disc list-inside text-gray-300 space-y-2">
                 <li>24/7 virtual reception services</li>
@@ -75,7 +75,7 @@ export default function TermsPage() {
             <section>
               <h2 className="text-2xl font-bold text-white mb-4">5. Limitation of Liability</h2>
               <p className="text-gray-300">
-                Irsa shall not be liable for any indirect, incidental, special, consequential, 
+                Opsly shall not be liable for any indirect, incidental, special, consequential, 
                 or punitive damages resulting from your use of the service.
               </p>
             </section>
@@ -102,7 +102,7 @@ export default function TermsPage() {
                 For questions regarding these terms, contact us at:
               </p>
               <div className="mt-4 space-y-2">
-                <p className="text-gray-300">Email: legal@irsa.ca</p>
+                <p className="text-gray-300">Email: legal@opsly.ca</p>
                 <p className="text-gray-300">Phone: +1 (855) 555-1234</p>
               </div>
             </section>

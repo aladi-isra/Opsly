@@ -63,9 +63,9 @@ export default function Footer() {
             {/* Logo */}
             <div className="flex items-center space-x-2">
               <div className="w-10 h-10 bg-gradient-to-r from-primary to-purple-400 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-lg">I</span>
+                <span className="text-white font-bold text-lg">O</span>
               </div>
-              <span className="text-white font-bold text-2xl">Irsa</span>
+              <span className="text-white font-bold text-2xl">Opsly</span>
             </div>
             <p className="text-sm leading-6 text-gray-300">
               AI-powered business automation that feels genuinely human. 
@@ -112,8 +112,8 @@ export default function Footer() {
                 <h3 className="text-sm font-semibold leading-6 text-white">Contact</h3>
                 <ul role="list" className="mt-6 space-y-4">
                   <li>
-                    <a href="mailto:hello@irsa.ca" className="text-sm leading-6 text-gray-300 hover:text-white transition-colors">
-                      hello@irsa.ca
+                    <a href="mailto:hello@opsly.ca" className="text-sm leading-6 text-gray-300 hover:text-white transition-colors">
+                      hello@opsly.ca
                     </a>
                   </li>
                   <li>
@@ -131,7 +131,7 @@ export default function Footer() {
         </div>
         <div className="mt-16 border-t border-gray-900/10 pt-8 sm:mt-20 lg:mt-24">
           <p className="text-xs leading-5 text-gray-400 text-center">
-            &copy; {new Date().getFullYear()} Irsa Inc. All rights reserved.
+            &copy; {new Date().getFullYear()} Opsly Inc. All rights reserved.
           </p>
         </div>
       </div>

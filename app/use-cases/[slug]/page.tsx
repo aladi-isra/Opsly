@@ -13,7 +13,7 @@ const useCaseLayouts = {
   'law-firms': {
     emoji: '🔍',
     headline: 'Streamline Legal Operations',
-    intro: 'Irsa enables law firms to handle intake, scheduling, and follow-ups without lifting a finger.',
+    intro: 'Opsly enables law firms to handle intake, scheduling, and follow-ups without lifting a finger.',
     features: [
       {
         title: 'Smart Client Intake',
@@ -50,7 +50,7 @@ const useCaseLayouts = {
   'real-estate': {
     emoji: '🏠',
     headline: 'Never Miss a Lead Again',
-    intro: 'Irsa helps real estate pros capture, qualify, and convert leads 24/7 with intelligent inquiry management.',
+    intro: 'Opsly helps real estate pros capture, qualify, and convert leads 24/7 with intelligent inquiry management.',
     features: [
       {
         title: 'Lead Qualification',
@@ -82,12 +82,12 @@ const useCaseLayouts = {
       'Property managers',
       'New construction sales',
     ],
-    outro: 'Close more deals with Irsa\'s intelligent lead management.'
+    outro: 'Close more deals with Opsly\'s intelligent lead management.'
   },
   'financial-advisors': {
     emoji: '💰',
     headline: 'Make Every Client Feel VIP',
-    intro: 'Irsa helps advisors stay on top of client relationships and routine tasks, freeing them to focus on strategy.',
+    intro: 'Opsly helps advisors stay on top of client relationships and routine tasks, freeing them to focus on strategy.',
     features: [
       {
         title: 'Smart Scheduling',
@@ -119,12 +119,12 @@ const useCaseLayouts = {
       'Wealth managers',
       'Multi-office firms',
     ],
-    outro: 'Deliver white-glove service at scale with Irsa.'
+    outro: 'Deliver white-glove service at scale with Opsly.'
   },
   'medical-clinics': {
     emoji: '❤️',
     headline: 'Healthier Clinics, Less Admin',
-    intro: 'Irsa automates essential patient workflows, reducing wait times and no-shows.',
+    intro: 'Opsly automates essential patient workflows, reducing wait times and no-shows.',
     features: [
       {
         title: 'Intake Automation',
@@ -161,7 +161,7 @@ const useCaseLayouts = {
   'marketing-agencies': {
     emoji: '📈',
     headline: 'Scale Your Agency with AI',
-    intro: 'Irsa automates client onboarding, content calendars, and reporting so your team can focus on creative work.',
+    intro: 'Opsly automates client onboarding, content calendars, and reporting so your team can focus on creative work.',
     features: [
       {
         title: 'Onboarding Automation',
@@ -198,8 +198,8 @@ const useCaseLayouts = {
 }
 
 const testimonials = {
-  'law-firms': '"Irsa saved us 12 hours/week — Managing Partner, Vantage Legal"',
-  'real-estate': '"Irsa helped us close 35% more leads! — Top Agent, Urban Realty"',
+  'law-firms': '"Opsly saved us 12 hours/week — Managing Partner, Vantage Legal"',
+  'real-estate': '"Opsly helped us close 35% more leads! — Top Agent, Urban Realty"',
   'financial-advisors': '"My clients love the fast follow-ups. — Senior Advisor, WealthPath"',
   'medical-clinics': '"No more no-shows! — Office Manager, Family Health Clinic"',
   'marketing-agencies': '"We scaled onboarding with zero extra admin. — CEO, CreativeWorks"',
@@ -207,16 +207,16 @@ const testimonials = {
 
 const faqs = [
   {
-    q: 'Is Irsa secure and compliant?',
-    a: 'Yes, Irsa is built with industry-standard security and privacy compliance in mind.'
+    q: 'Is Opsly secure and compliant?',
+    a: 'Yes, Opsly is built with industry-standard security and privacy compliance in mind.'
   },
   {
     q: 'How quickly can I get started?',
     a: 'Most clients are up and running within a day, with full onboarding support.'
   },
   {
-    q: 'Can Irsa integrate with my existing tools?',
-    a: 'Absolutely! Irsa connects with popular calendars, CRMs, and communication platforms.'
+    q: 'Can Opsly integrate with my existing tools?',
+    a: 'Absolutely! Opsly connects with popular calendars, CRMs, and communication platforms.'
   }
 ]
 

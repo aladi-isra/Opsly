@@ -6,10 +6,10 @@ export default function VideoSection() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            See Irsa in Action
+            See Opsly in Action
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-300">
-            Watch how Irsa transforms customer interactions and boosts business productivity 
+            Watch how Opsly transforms customer interactions and boosts business productivity 
             with natural, intelligent conversations.
           </p>
         </div>
@@ -20,7 +20,7 @@ export default function VideoSection() {
             <div className="aspect-video bg-brandLight rounded-2xl overflow-hidden shadow-2xl border border-white/10">
               <iframe
                 src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                title="Irsa AI Demo Video"
+                title="Opsly AI Demo Video"
                 className="w-full h-full"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
